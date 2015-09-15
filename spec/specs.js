@@ -20,4 +20,9 @@ describe('User', function() {
     var testUser = new User("Jenny Lopez", 500);
     expect(testUser.makeDeposit(100)).to.equal(600);
   });
+
+  it("allows a user make a withdrawl from their account", function() {
+    var testUser = new User("Jenny Lopez", 600);
+    expect(testUser.makeWithdrawl(200)).to.equal(400);
+  });
 });

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/scripts.js"></script>
+    <title>Bank of the Block</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2><center>Welcome to <br><u>Bank of the Block</u></center></h2>
+
+      <div class="row">
+        <h3>Please sign in to access your account:</h3>
+        <form id="user-account">
+          <div class="form-group">
+            <label for="user-name">Users Name</label>
+            <input type="text" class="form-control" id="user-name">
+          </div>
+          <div class="form-group">
+            <label for="first-deposit">Amount to Deposit</label>
+            <input type="int" class="form-control" id="first-deposit" placeholder="$">
+          </div>
+
+          <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+        <h2 id="show-account">Your Account Balance</h2>
+        <h2 id="user-balance"></h2>
+
+      </div>
+      <div id="show-account">
+        <h2>Account Holder's Name: <span="user-name"></span></h2>
+        <h2>Account Balance <span="user-balance"></span></h2>
+      </div>
+
+    </div>
+  </body>
+</html>
