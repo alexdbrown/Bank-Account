@@ -21,6 +21,11 @@ User.prototype.makeWithdrawl = function(newWithdrawl) {
   return this.balance;
 }
 
+function resetFields() {
+  $("input#user-name").val("");
+  $("input#first-deposit").val("");
+}
+
 $(document).ready(function() {
   $('form#user-account').submit(function(event) {
     event.preventDefault();
