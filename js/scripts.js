@@ -1,12 +1,19 @@
-function User(userName, deposit) {
+
+debugger;
+function User(userName, firstDeposit) {
   this.userName = userName;
-  this.deposit = deposit;
+  this.balance = firstDeposit;
 }
 
 User.prototype.account = function() {
-  return this.userName + ", " + this.deposit;
+  return this.userName + ", " + this.balance;
 }
 
-User.prototype.balance = function() {
-  return this.deposit;
+User.prototype.currentBalance = function() {
+  return this.balance;
+}
+
+User.prototype.makeDeposit = function(newDeposit) {
+  this.balance += newDeposit;
+  return this.balance;
 }
